@@ -82,7 +82,7 @@ docker compose up -d
 3. 部署完成后，通过 Cloudflare Pages 分配的域名访问站点即可。
 
 ## ⚙️ 配置提示
-- API 基地址定义在 functions/proxy.ts 中的第1行，可替换为自建接口域名。或者- **Cloudflare Pages：** 在项目的 **Settings → Functions → Environment variables** 中新增名为 `APIURL` 的环境变量，值为自行导入的音源链接。
+- API 基地址定义在 functions/proxy.ts 中的第1行，可替换为自建接口域名。或者- **Cloudflare Pages：** 在项目的 **Settings → Functions → Environment variables** 中新增名为 `‎API_BASE_URL` 的环境变量，值为自行导入的音源链接。
 - 默认主题、播放模式等偏好可在 `state` 初始化逻辑中按需调整。
 
 ### ☁️ Cloudflare D1 绑定与建表
